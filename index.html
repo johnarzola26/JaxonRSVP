@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/stylesheet.css" />
+
+    <title>Jaxon's 1st Birthday!</title>
+  </head>
+  <body>
+    <!-- call to action section -->
+    <!-- CALL TO ACTION BOX SECTION -->
+    <section class="section-cta" id="cta">
+      <div class="container">
+        <div class="cta">
+          <div class="cta-text-box">
+            <h1 class="heading-secondary">
+              You are invited to Jaxon's 1st Birthday Party!
+            </h1>
+            <p class="cta-text">
+              Let us know if you are gonig to make it! Fill in the information
+              below!
+            </p>
+            <!-- input boxes for user to sign up. *required* gives a user an error if they do not fill up the box-->
+            <form class="cta-form" action="sign-up" name="sign-up" netlify>
+              <!-- name input box -->
+              <div>
+                <label for="full-name">Full Name</label>
+                <input
+                  id="full-name"
+                  type="text"
+                  placeholder="First and last name"
+                  name="full-name"
+                  required
+                />
+              </div>
+              <!-- email input box -->
+              <div>
+                <label for="email">Email Address</label>
+                <input
+                  id="email"
+                  type="email"
+                  placeholder="youremail@example.com"
+                  name="email"
+                  required
+                />
+              </div>
+              <!-- where did you hear from us selection tab.  -->
+              <div>
+                <label for="select-where">RSVP right here!</label>
+                <select id="select-where" name="select-where" required>
+                  <option value="">Please choose one</option>
+                  <option value="Friends">
+                    I am going to make it, and down to party!
+                  </option>
+                  <option value="Podcast">I'm lame, and staying home</option>
+                </select>
+              </div>
+              <!-- sign up now button -->
+              <button class="btn btn--form">Send it!</button>
+            </form>
+          </div>
+          <div
+            class="cta-img-box"
+            role="img"
+            aria-label="Woman enjoying food"
+          ></div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
