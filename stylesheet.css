@@ -15,6 +15,24 @@ html {
   /* does not work on safari or microsoft edge */
   /* scroll-behavior: smooth; */
 }
+body {
+  font-family: sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+
+  /* this only works if there is nothing absolutely positioned in relation to the body */
+  overflow-x: hidden;
+
+  background-color: #f5ebe0;
+  background-image: url("/519c6662340bd0a87a9d4d597a032a7c.jpg");
+  background-size: cover;
+}
+
+h1 {
+  font-size: 2rem;
+  color: orange;
+}
 .cta {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -22,18 +40,26 @@ html {
   box-shadow: 0 3.2rem 6.4rem rgb(0, 0, 0, 0.15);
   border-radius: 1.1rem;
 
-  background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+  background-color: #9d0208;
   overflow: hidden;
+}
+
+.container {
+  /* 1140px */
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
 }
 
 .section-cta {
   /* top / right / bottom / left */
   padding: 4.8rem 0 12.8rem 0;
+  width: 100%;
 }
 
 .cta-text-box {
   padding: 4.8rem 6.4rem 6.4rem 6.4rem;
-  color: #45260a;
+  color: orange;
 }
 
 .cta-text {
@@ -43,7 +69,7 @@ html {
 }
 
 .cta .heading-secondary {
-  color: #45260a;
+  color: orange;
   margin-bottom: 3.2rem;
 }
 
@@ -81,11 +107,41 @@ html {
 }
 
 .cta-form input::placeholder {
-  color: #aaa;
+  color: orange;
 }
 
 /* focus style when user presses tab */
 .cta *:focus {
   outline: none;
   box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.507);
+}
+
+.btn--form {
+  background-color: #370617;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.btn--form:hover {
+  background-color: #fff;
+  color: #555;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+
+  font-size: 2rem;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+  text-decoration: none;
+  /* animation effect. Always put the transition in the original state */
+
+  /* for cta button */
+  transition: all 0.3s;
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
 }
